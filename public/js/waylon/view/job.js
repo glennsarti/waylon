@@ -11,7 +11,7 @@ Waylon.Views.Job = Backbone.View.extend({
                 '<img class="weather"></img>',
             '</div>',
             '<div class="col-md-9 job-details">',
-                '<a href="{{url}}">{{display_name}} #{{last_build_num}}</a>',
+                '<a href="{{url}}">{{display_name}} #{{last_build_num}}</a>{{# if since_last_build}} - {{since_last_build}} ago{{/if}}',
             '</div>',
             '<div class="col-md-2 job_action">',
             '</div>',
